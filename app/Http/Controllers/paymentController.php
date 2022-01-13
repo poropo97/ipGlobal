@@ -20,6 +20,7 @@ class paymentController extends Controller
 
     public function getPaymentHtml(Request $request)
     {
+      // el payment se recupera en el middleware
       return view('payment')->with('payment',$request->payment);
     }
 
